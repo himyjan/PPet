@@ -1,11 +1,11 @@
 import { createModel } from '@rematch/core'
 import { RootModel } from '.'
 
-const config = window.bridge.getConfig() || {}
+const config = window.bridge?.getConfig() || {}
 
 export const win = createModel<RootModel>()({
   state: {
-    resizable: window.bridge.isWinResizable(),
+    resizable: window.bridge?.isWinResizable() ?? true,
     showTool: config.showTool ?? true,
     language: config.language ?? 'zh',
   } as { resizable: boolean; showTool: boolean; language: 'zh' | 'en' },

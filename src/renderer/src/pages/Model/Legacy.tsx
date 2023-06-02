@@ -6,11 +6,11 @@ const Legacy: FC<LegacyType> = ({ modelPath, height, width }) => {
   const isMountRef = useRef(false)
 
   useEffect(() => {
-    ;(window as any).loadlive2d('live2d', modelPath)
+    ; (window as any).loadlive2d('live2d', modelPath)
   }, [modelPath])
 
   useEffect(() => {
-    //  使用 key={+new Date()} 会导致渲染模型不完整，这里暂时对窗口改变时进行刷新
+    //  使用 key={+new Date()} 會導致渲染模型不完整，這裡暫時對窗口改變時進行刷新
     // TODO
     if (isMountRef.current) {
       window.location.reload()

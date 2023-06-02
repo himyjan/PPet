@@ -1,12 +1,12 @@
 ---
 name: Bug Report
-about: 报告一个问题
+about: 報告一個問題
 ---
 
-**请先确认是否为[最新版本](https://github.com/zenghongtu/PPet/releases/latest)**
+**請先確認是否為[最新版本](https://github.com/zenghongtu/PPet/releases/latest)**
 
-#### 问题描述
+#### 問題描述
 
 **_平台信息(win/mac/linux)：_**
 
-#### 截图（可选）
+#### 截圖（可選）
